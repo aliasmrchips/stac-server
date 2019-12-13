@@ -21,7 +21,11 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "lerna": "^2.11.0",
+    "redoc": "^2.0.0-rc.19",
     "shins": "^2.3.2-3",
     "widdershins": "^3.6.6"
+  },
+  "dependencies": {
+    "redoc-cli": "^0.9.4"
   }
 }
