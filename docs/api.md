@@ -1,5 +1,5 @@
 ---
-title: The SAT-API
+title: The STAC-API
 language_tabs:
   - nodejs: NodeJS
   - python: Python
@@ -11,7 +11,7 @@ headingLevel: 2
 
 ---
 
-<h1 id="the-sat-api">The SAT-API v0.2.0</h1>
+<h1 id="the-sat-api">The STAC-API v1.0.0</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
@@ -19,12 +19,14 @@ Sat-api is a STAC compliant web API for searching and serving metadata for geosp
 
 Base URLs:
 
-* <a href="https://sat-api.developmentseed.org/">https://sat-api.developmentseed.org/</a>
+* <a href="https://earth-search.aws.element84.com/v1">https://earth-search.aws.element84.com/v1</a>
 
-* <a href="https://sat-api-dev.developmentseed.org/">https://sat-api-dev.developmentseed.org/</a>
+<!-- * <a href="https://sat-api.developmentseed.org/">https://sat-api.developmentseed.org/</a>
 
-Email: <a href="mailto:info@developmentseed.org">Development Seed</a> Web: <a href="https://developmentseed.org/contacts/">Development Seed</a> 
-License: <a href="https://github.com/sat-utils/sat-api/blob/master/LICENSE">MIT License</a>
+* <a href="https://sat-api-dev.developmentseed.org/">https://sat-api-dev.developmentseed.org/</a> -->
+
+<!-- Email: <a href="mailto:info@developmentseed.org">Development Seed</a> Web: <a href="https://developmentseed.org/contacts/">Development Seed</a>  -->
+License: <a href="https://github.com/stac-utils/stac-api/blob/master/LICENSE">MIT License</a>
 
 <h1 id="the-sat-api-stac">STAC</h1>
 
@@ -70,7 +72,7 @@ print r.json()
 
 ```
 
-`GET /stac`
+`GET /`
 
 Returns the root STAC Catalog or STAC Collection that is the entry point for users to browse with STAC Browser or for search engines to crawl. This can either return a single STAC Collection or more commonly a STAC catalog that usually lists sub-catalogs of STAC Collections, i.e. a simple catalog that lists all collections available through the API.
 
@@ -147,7 +149,7 @@ print r.json()
 
 ```
 
-`GET /stac/search`
+`GET /search`
 
 Retrieve Items matching filters. Intended as a shorthand API for simple queries.
 
